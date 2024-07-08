@@ -1,0 +1,15 @@
+Comandos básicos: 
+-
+window.alert ('Hello World'); = uma janela de alerta antes que o site seja iniciado
+window.confirm ('Está gostando de JS?'); = uma janela de confirmação antes que o site seja iniciado.
+window.prompt ('Qual é seu nome?'); = uma caixa de pergunta antes que o site seja iniciado, provavelmente para cadastrar o nome do usuário.
+" = " Esse sinal representado uma única vez, se da ao nome de "recebe". Pode ser usado também para dar valor a uma variável. Ex: vaga a' = carro1
+- Para que uma variável não receba mais valor algum, pode ser atribuida dessa forma: a1 = null
+String = igual a palavra dentro de uma variável ou var
+Regras para identificadores: 
+# Podem começar com letra, $ ou _
+# Não podem começar com números
+# É possível usar letras ou números
+# É possível usar acentos e símbolos
+# Não podem conter espaços
+# Não podem ser palavras reservadas
