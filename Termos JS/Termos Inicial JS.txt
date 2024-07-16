@@ -1,0 +1,62 @@
+<script>
+    var n1 = window.prompt ('Digite um nome: ')
+    var n2 = window.prompt ('Digite outro número: ')
+    var s = n1 
+    window.alert  ('À soma dos valores é: ' + s)
+</script>
+Acima atribuindo uma variavel e as somando, conforme o que o usuário escolher.
+Converter de uma string para number ou visse versa utiliza:
+Number.parseInt(n) = número inteiro - inteiro
+Number.parseFloat(n) = número real - com vírgula
+Number(n) = trata para número seja inteiro ou real.
+- Exemplo a baixo: (Convertendo uma variavel, e as somando)
+var n1 = Number.parseInt (window.prompt ('Digite um número: '))
+var n2 = Number.parseInt(window.prompt ('Digite outro número: '))
+var s = n1 + n2
+window.alert  ('À soma dos valores é: ' + s)
+--------------------------------------------------------------------------------------------------------------------------------
+De number para string pode se usar:
+String(n)
+n.toString()
+--------------------------------------------------------------------------------------------------------------------------------
+Denominar variável em um código utilizando um placeholder mais simples.
+-
+placeholder: `${s}`
+`O aluno ${nome} com ${idade}`
+--------------------------------------------------------------------------------------------------------------------------------
+document.write(`Seu nome tem ${nome.length} letras.`)
+Tag acima permite que o texto digitado no prompt seja incluido no <p> do site comum
+-
+Para formatação de números no Nodejs ou JS no VisualStudio:
+n1.toFixed(2) = para completar as últimas casas ex: 1545.5 = 1545.50
+caso queira adicionar uma vírgula ao invés do ponto: n1.toFixed(2).replace ('.', ',') 
+= replace um comando de troca = 1545,50
+- Para adicionar o número selecionado como um valor real ou dolar:
+n1.toLocaleString ('pt-BR', {style: 'currency', currency: 'BRL'}) = R$ 1.545,50
+Tag utilizada para identificar salários. 
+--------------------------------------------------------------------------------------------------------------------------------
+operadores: 
+5 % 2 = 1 / Ao lado um exemplo diferente de aritmetico. Para porcentagem se calcula pelo resto de uma divisão inteira
+5 ** 2 = 25 / operador novo "Potência", 5 elevado a dois também = a 5 * 2 
+-
+Auto-atribuição:
+var n = 3
+n = n + 4 = 7 ('n' vai passar a valer 7 pela auto-atribuição.)
+-
+n += 4 simplificar uma auto-atribuição ou auto-referencia.
+'+=' é uma sintaxe para simficar
+--------------------------------------------------------------------------------------------------------------------------------
+Incremento: / utilizado para facilitar ainda mais a autoatribuição.
+var x = 5 
+x = x + 1  /  x+= 1  / x++
+x = x - 1  /  x-=1  / x--
+--------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
