@@ -1,0 +1,20 @@
+Árvore DOM:
+|----------window------------|
+location / document / history
+              ||  
+     |-------html-------| 
+     head            body 
+ meta / title  - (todo conteúdo do site)
+
+location: localização do site.
+history: histórico do site e suas abas.
+document: documento do site inteiro.
+------------------------------------------------------------------------------------------------------------
+- Tudo incluso no DOM são element(elementos)
+Para selecionar da pra realizar por marca, id, nome, classe ou seletor
+Marca: getElementsByTagName()
+ID: getElementsByTagId()
+Name: getElementsByTagName()
+Class: getElementsByTagClassName()
+Selector: querySelector() - querySelectorAll()
+Ex: var p1 = window.document.getElementsByTagName('p')[1]
