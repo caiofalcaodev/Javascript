@@ -1,0 +1,61 @@
+Condição simples: 
+É quando é utilizado somente o "If" para apenas uma condição de sim.
+var vel = 61
+console.log(`a velocidade do seu carro é ${vel}`)
+if (vel > 60) {
+    console.log('Você ultrapassou a velocidade permitida, Multado!')
+} 
+console.log('Dirija sempre usando cinto de segurança!')
+--------------------------------------------------------------------------------------------------------------------
+Condição composta é feita por if e else 
+ex:
+<script>
+        var passap = window.document.querySelector('input#passp')
+        function calc() {
+            var passap = window.document.querySelector('input#passp')
+            var passaporte = String(passap.value)
+            res.innerHTML = `<p><strong>${passaporte}!</strong></p>`
+
+            if (passaporte != 'Brasil') {
+                res.innerHTML += (`<p>Você é Estrangeiro!</p>`)
+            } else {
+                res.innerHTML += (`<p>Você é brasileiro!</p>`)
+            }
+        }
+</script>
+--------------------------------------------------------------------------------------------------------------------
+Condiçoes aninhadas:
+São condições em conjunto, para vários casos.
+Ex:
+var agora = new Date()
+var hora = agora.getHours()
+console.log(`Agora exatamente são ${hora}h.`)
+if (hora <= 4) {
+    console.log('Boa madrugada!')
+} else if (hora <= 11) {
+    console.log('Bom dia!')
+} else if (hora <= 18) {
+    console.log('Boa tarde!')
+} else {
+    console.log('Boa noite!')
+}
+- Para determinar uma hora que esteja disponivel de acordo com seu sistema:
+var agora = new Date()
+var hora = agora.getHours()
+Determinamos uma variavel para data e incluimos getHours para outra variavel.
+--------------------------------------------------------------------------------------------------------------------
+Condição Múltipla:
+switch (expressão) {
+    case valor 1:
+	break (obrigatório)
+    case valor 2:
+	break
+}
+Cria várias condições para o valor que seja lançado e aplica a função de condição.
+switch(mesY) {
+    case 0:
+        console.log('Janeiro')
+        break
+    case 1:
+        console.log('Fevereiro')
+        break

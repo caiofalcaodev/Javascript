@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #box {
+            height: 300px;
+            width: 300px;
+            margin: auto;
+            text-align: center;
+            padding-top: 60px;
+            border: solid 2px black;
+            box-shadow: 1px 1px rgba(0, 0, 0, 0.404);
+            background-color: rgb(32, 192, 255);
+            color: white;
+        }
+
+        #passp {
+            border: solid 2px black;
+        }
+
+        #botao {
+            border: solid 1px black;
+            padding: 4px;
+            background-color: rgba(255, 255, 96, 0.514);
+        }
+
+        h1 {
+            background-color: rgb(18, 19, 14);
+            padding: 2px;
+            width: 180px;
+            text-align: center;
+            margin: auto;
+            margin-top: 20px;
+            font-weight: bolder;
+        }
+
+        p {
+            font-size: large;
+            background-color: rgb(162, 162, 255);
+        }
+    </style>
+    <title>Passport</title>
+</head>
+<body>
+    <div id="box">
+        <h1>Aeroporto</h1>
+        <p>Qual sua nacionalidade?</p>
+        <input type="text" name="passp" id="passp">
+        <input type="button" id="botao" value="Receber" onclick="calc()">
+        <div id="res">
+        </div>
+    </div>
+    <script>
+        var passap = window.document.querySelector('input#passp')
+        function calc() {
+            var passap = window.document.querySelector('input#passp')
+            var passaporte = String(passap.value)
+            res.innerHTML = `<p><strong>${passaporte}!</strong></p>`
+
+            if (passaporte != 'Brasil') {
+                res.innerHTML += (`<p>Você é Estrangeiro!</p>`)
+            } else {
+                res.innerHTML += (`<p>Você é brasileiro!</p>`)
+            }
+        }
+    </script>
+</body>
+</html>

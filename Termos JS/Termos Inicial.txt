@@ -1,7 +1,7 @@
 <script>
-    var n1 = window.prompt ('Digite um nome: ')
+    var n1 = window.prompt ('Digite um número: ')
     var n2 = window.prompt ('Digite outro número: ')
-    var s = n1 
+    var s = n1 + n2
     window.alert  ('À soma dos valores é: ' + s)
 </script>
 Acima atribuindo uma variavel e as somando, conforme o que o usuário escolher.
@@ -42,7 +42,7 @@ operadores:
 Auto-atribuição:
 var n = 3
 n = n + 4 = 7 ('n' vai passar a valer 7 pela auto-atribuição.)
--
+Ou podemos usar:
 n += 4 simplificar uma auto-atribuição ou auto-referencia.
 '+=' é uma sintaxe para simficar
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -60,17 +60,18 @@ Identidade: 5 == 5 -> true / 5 == '5' -> true / 5 === '5' -> false / 5 === 5 -> 
 === -> operador de igualdade restrita. (igual) - Determina se um caractere é igual mesmo tento um outro tipo ou tendo o mesmo valor
 !== -> desigual restrito. (diferente) - Determina um caractere é diferente de outro.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
-Lógicos: 
-   !    /   &&    /    ||     /
+Lógicos:  
+  !     /   &&    /    ||    /
 Negação/Conjunção/ Disjunção/
 -
-!: Negação, aceita ou true or false.
+!: Negação, aceita, true or false.
 - 
 &&: Conjunção, só necessita de um valor false para que seja determinado false.
 true - true -> true
 true - false -> false
 false - true -> false
 false - false -> false
+- Conjunção ela vai determinar se o valor é realmente verdadeiro como o exemplo lá embaixo.
 -
 ||: Disjunção, só necessita de um valor true para que seja determinado true.
 true - true -> true

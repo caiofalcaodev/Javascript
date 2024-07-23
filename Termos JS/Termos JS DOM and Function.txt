@@ -1,0 +1,70 @@
+DOM - Document Object Model
+Árvore DOM:
+|----------window------------|
+location / document / history
+              ||  
+     |-------html-------| 
+     head            body 
+ meta / title  - (todo conteúdo do site)
+
+location: localização do site.
+history: histórico do site e suas abas.
+document: documento do site inteiro.
+------------------------------------------------------------------------------------------------------------
+- Tudo incluso no DOM são element(elementos)
+Para selecionar da pra realizar por marca, id, nome, classe ou seletor
+Marca: getElementsByTagName()
+ID: getElementsByTagId()
+Name: getElementsByTagName()
+Class: getElementsByTagClassName()
+Selector: querySelector() - querySelectorAll()
+Ex: var p1 = window.document.getElementsByTagName('p')[1]
+------------------------------------------------------------------------------------------------------------
+Funções:
+function ação() {
+<código>
+}
+-
+Função, serve para determinar alguma ação no javascript.
+-
+Dentro de uma página web, existem eventos já determinados e dentro de uma function da para personalizar.
+Exemplo:
+<div id="area"> </div>
+var a = window.document.getElementById('area')
+
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair)
+Acima criei uma variável e inclui um id a cada movimento(evento).
+Abaixo criei uma função no proposito de controlar o click do mouse por exemplo. 
+Dessa forma o mesmo irá cumprir sua função de acordo com o evento proposto:
+function clicar() {
+           a.innerText = 'Clicou' 
+           a.style.background = 'red'
+        }
+------------------------------------------------------------------------------------------------------------
+Uma calculadora construida para somar: 
+<div id="calculadora">
+        <h1>Calculadora</h1>
+        <input type="number" name="txtn1" id="txtn1"> +
+        <input type="number" name="txtn2" id="txtn2">
+        <input type="button" id="botao" value="Somar" onclick="somar()">
+        <div id="res">Resultado:</div>
+    </div>
+    <script>
+        function somar() {
+            var tn1 = window.document.getElementById('txtn1')
+            var tn2 = window.document.getElementById('txtn2')
+            var res = window.document.getElementById('res')
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var s = n1 + n2
+            res.innerHTML = `Resultado: ${s}`
+        }
+    </script>
+
+
+
+
+
+
