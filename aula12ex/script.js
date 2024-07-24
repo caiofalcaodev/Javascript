@@ -7,7 +7,7 @@ function carregar() {
     var minutos = data.getMinutes();
     var segundos = data.getSeconds();
     msg.innerHTML = `${hora}:${minutos}:${segundos}`
-    setInterval(carregar, 1000);
+    setInterval(carregar, 500);
 
 
     if (hora >= 0 && hora < 12) {

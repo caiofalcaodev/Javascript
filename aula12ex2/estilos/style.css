@@ -1,0 +1,8 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
+
+body {
+    background-color: rgb(255, 255, 255);
+    font-family: 'Patua One', Arial, Helvetica, sans-serif;
+}
+
