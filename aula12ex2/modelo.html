@@ -8,18 +8,28 @@
 </head>
 <body>
     <header>
-        <h1>Titulo</h1>
+        <h1>Verificardor de Idade</h1>
     </header>
     <section>
         <div>
-        </div>
-        <div>
-
+            <p id="p1">Ano de Nascimento:</p>
+            <input type="number" name="nAno" id="iano">
+            <p>Sexo:</p>
+            <input type="radio" name="sexo" id="mas" checked>
+            <label for="mas">Masculino</label>
+            <input type="radio" name="sexo" id="fem">
+            <label for="fem">Feminino</label>
+            <p>
+                <input id="botao" type="button" value="Verificar" onclick="verificar()">
+            </p>
+            <div>
+        <div id="res">
+            <p>Preencha os dados acima para ver o resultado!</p>
         </div>
     </section>
     <footer> 
-
-    </footer>
+        <a id="eu" href="https://github.com/caiofalcaodev" target="_blank"><i>&copy;CaioFalcaoDev</i></a>
+</footer>
     <script src="script.js"></script>
 </body>
 </html>

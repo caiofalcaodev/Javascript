@@ -45,10 +45,7 @@ function verificar() {
             }
             //função para caso seja feminino atribuindo em conjunto com a idade
         }
-        res.style.textAlign = 'center'
-        res.innerHTML = `<p>Detectamos ${genero} com ${idade} anos!</p>`
+        res.innerHTML = `Detectamos ${genero} com ${idade} anos!`
         res.appendChild(img)
-        
         //resultado para a pesquisa
     }
-}
