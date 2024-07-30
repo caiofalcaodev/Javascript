@@ -1,0 +1,38 @@
+Uma estrutura de repetição(while) serve para determinar uma função enquanto ela for verdadeira(true)
+caso seja falsa(false) ela termina.
+function comer pizza() {
+    while comer fatia()
+}
+Ex acima podemos ver a estrutura, enquanto tiver fatias dentro dessa repetição, comeremos. 
+Não importa quantas fatias, comeremos até acabar, caso acabe a estrutura é finalizada e sairemos do bloco.
+----------------------------------------------------------------------------------------------------------------------------------------
+Um programa simples para repetição, enquanto var c for menor ou igual a 10, c vai ser somado com +1:
+var c = 1
+while (c <= 10) {
+    console.log(`Passo ${c}`)
+    c++
+}
+----------------------------------------------------------------------------------------------------------------------------------------
+Repetições também pode seguir um outro padrão. Primeiro usando essa acima ou executando uma tarefa 
+e após a tarefa é utilizado a tag while. Essa estrutura tem a mesma funcionalidade mas para utiliza-la é de caso a casos.
+do {
+
+} while {
+
+}
+----------------------------------------------------------------------------------------------------------------------------------------
+Estrutura com variável de controle:
+inicialização, teste lógico e incremento.
+estrutura = for 
+for (inicio; teste; incr){
+
+}
+Ex:
+var c = 1
+while (c <= 10) {
+    c++
+}
+-
+for (var c=1; c<=10; c++){
+
+}
