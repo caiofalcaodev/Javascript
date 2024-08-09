@@ -1,3 +1,3 @@
-for (c=10; c<=50; c+10){
-console.log(`Passo${c}`)
+for (var c = 2; c <= 50; c *= 2) {
+console.log(c)
 }

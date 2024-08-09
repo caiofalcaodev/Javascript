@@ -1,0 +1,3 @@
+Variáveis simples só conseguem armezenar um valor por vez. 
+Variáveis compostas devem ser capazes de armazenar vários valores 
+em uma mesma estrutura.

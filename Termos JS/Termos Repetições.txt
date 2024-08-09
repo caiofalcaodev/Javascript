@@ -36,3 +36,7 @@ while (c <= 10) {
 for (var c=1; c<=10; c++){
 
 }
+----------------------------------------------------------------------------------------------------------------------------------------
+Lembrar de quando se tratar de números para variaveis converte-las em de fato números. 
+let i = Number(ini.value)
+let f = Number(fim.value)
