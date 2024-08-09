@@ -16,3 +16,20 @@ basta utilizar a tag: num.push(7) - de forma automática vai alocar no último e
 -
 num.length é o comprimento da array, quantos valores estão atribuidos.
 num.sort() inclui todos os elementos de forma crescente, ordenados.
+-
+Da para atribuir arrays dentro de uma estrutura de repetição para simplificar a exibição.
+Ex:
+let valores = [8, 1, 3, 4, 9]
+for (pos = 0; pos < valores.length; pos++) {
+    valores.sort()
+    console.log(`A posição ${pos} tem o valor ${valores[pos]}`)
+}
+Existe outra forma mais simplificada utilizando, exemplo:
+let valores = [8, 1, 3, 4, 9]
+valores.sort()
+for (let pos in valores) {
+    console.log(`A posição ${pos} tem o valor ${valores[pos]}`)
+}
+Para cada posição em num eu vou mostra o num[pos]
+num.indexOf(7) -  Para identificar o valor de algum vetor incluso no código. 
+Caso não tenho o valor pesquisado, é retornado -1 como resposta.
