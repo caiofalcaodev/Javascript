@@ -1,3 +1,18 @@
 Variáveis simples só conseguem armezenar um valor por vez. 
-Variáveis compostas devem ser capazes de armazenar vários valores 
+Variáveis compostas(array/vetor) devem ser capazes de armazenar vários valores 
 em uma mesma estrutura.
+Ex:
+vaga a = [c0, c1, c2]
+-
+Dentro de uma array temos o (elemento) que seria o conjunto de variaveis aplicadas, 
+o (índice chave) que seria a colocação das variáveis, e o (conteúdo valor) ou seja o que são as variáveis.
+-
+Ex de código:
+let num = [5, 4, 6] - criando uma array
+console.log(`Nosso vetor é o ${num}`) - aplicando para usuário
+num[3] = 8 - acrescentando mais um elemento na array
+Caso queira acrescentar na última posição independente de qualquer coisa
+basta utilizar a tag: num.push(7) - de forma automática vai alocar no último espaço.
+-
+num.length é o comprimento da array, quantos valores estão atribuidos.
+num.sort() inclui todos os elementos de forma crescente, ordenados.
